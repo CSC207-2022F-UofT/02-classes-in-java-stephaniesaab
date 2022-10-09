@@ -82,7 +82,7 @@ public class Silly implements Comparable<Silly>{
 
     /**
      * Creates a new Silly object
-     * This constructor takes in two strings as arguments
+     * This constructor takes in two strings as arguments.
      *
      * @param str1 a string for the first part of this Silly instance's name
      * @param str2 a string for the second part of this Silly instance's name
@@ -211,11 +211,10 @@ public class Silly implements Comparable<Silly>{
          *                You can get the length of a string by using the
          *                .length() method.
          */
-        Silly another = (Silly) other;
-        if (this.name.length() == another.name.length()) {
+        if (this.name.length() == other.name.length()) {
             return 0;
         }
-        else if (this.name.length() > another.name.length()) {
+        else if (this.name.length() > other.name.length()) {
             return 1;
         }
         else {
@@ -232,5 +231,6 @@ public class Silly implements Comparable<Silly>{
      *                If the tests don't pass, look at the results and revise
      *                accordingly.
      */
+
 }
 
